@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Morris</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-</head>
-
+    <title>Patrick Morris | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head> 
 <body>
-    <main>
-        <nav class="nav-top">
-            <Link href="/"><a>Home</a></Link>
-            <Link href="/about"><a>About</a></Link>
-            <Link href="/ninjas/"><a>Games</a></Link>
-        </nav>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>    
+    
+    <header class="header-container">
+        <img src="images/fantasy_highres.jpg" alt="Banner Image" class="image-banner">
+        <div class="header-content">
+            <h1>Patrick Morris</h1>
+            <p>Web Developer | Designer | Game Developer</p>
+        </div>
+        <div class="arrow-down"></div>
+    </header>
 
-        <div class="profile-pic"> </div>
-        <h1 class="title"> Thomas Morris</h1>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Patrick, a passionate web developer based in Ontario. I love creating clean, modern, and user-friendly website. I also enjoy creating immersive games with my free time.</p>
+    </section>
 
-        <section>
-            <h2>About Me:</h2>
-            <p>
-                After working for over 2 years as an indie game devleoper, I decided to make a change and pursue a
-                career as a Front End Developer. Since then I've been building projects and deepening my knowledge of
-                different
-                frameworks and technologies.
-
-                As an indie game developer on a small team, I've had to learn and become effective in all areas of game
-                design,
-                ranging from art (3D modelling, VFX, materials, etc) to programming (AI, collision, network multiplayer,
-                etc)
-                It is through this experience that I have fostered my desire to learn, grow and become an effective
-                contributer to the team.
-            </p>
-        </section>
-
-        <section>
-            <h2>Tech Stack:</h2>
-            <ul class="tech-stack">
-                <li>
-                    <img src="/Images/Github.svg" alt="Github logo">
-                    <p>Github</p>
-                </li>
-                <li>
-                    <img src="/Images/LinkedIn.svg" alt="LinkedIn logo">
-                    <p>LinkedIn</p>
-                </li>
-                <li>
-                    <img src="/Images/Github.svg" alt="Github logo">
-                    <p>Github</p>
-                </li>
-                <li>
-                    <img src="/Images/LinkedIn.svg" alt="LinkedIn logo">
-                    <p>LinkedIn</p>
-                </li>
-                <li>
-                    <img src="/Images/Github.svg" alt="Github logo">
-                    <p>Github</p>
-                </li>
-                <li>
-                    <img src="/Images/LinkedIn.svg" alt="LinkedIn logo">
-                    <p>LinkedIn</p>
-                </li>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <a href="project1.html">
+                <img src="images/face_customizer.webp" alt="Project 1" loading="lazy">
+                <div class="project-info">
+                    <h3>Face Customizer</h3>
+                    <p>Fully customize the appearance of your own character</p>
                 </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="project2.html">
+                <img src="images/unit_manager/unit_manager_3.webp" alt="Project 2" loading="lazy">
+                <div class="project-info">
+                    <h3>Unit Manager</h3>
+                    <p>An efficient system for handling game AI en masse</p>
+                </div>
+            </a>
+        </div>
+    </section>
 
-        </section>
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or just say hello, feel free to reach out!</p>
+        <ul> 
+            <li>
+                <a href="mailto:Patrick.Francis.Morris@gmail.com">
+                    <img src="icons/email.svg" alt="Email" width="24" height="24">
+                    Email
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/patrick-francis-morris/" target="_blank">
+                    <img src="icons/linkedin.svg" alt="LinkedIn" width="24" height="24">
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/PatTheNoble" target="_blank">
+                    <img src="icons/github.svg" alt="GitHub" width="24" height="24">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    
 
-    </main>
     <footer>
+        <div class="container">
+            <p>&copy; 2024 Patrick Morris. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
-
 </html>
